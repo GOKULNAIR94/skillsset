@@ -44,7 +44,7 @@ app.controller('testController', function($scope, $http) {
                 "skill": obj
             })
             .then(function(res) {
-                alert('This skill is ' + (status === 1 ? 'Approved' : 'Rejected'));
+                alert('This skill is ' + (status == true ? 'Approved' : 'Rejected'));
             });
     }
 
