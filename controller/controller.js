@@ -8,7 +8,7 @@ app.controller('testController', function($scope, $http) {
         "status": null
     }
 
-    $http.get('http://localhost:8888/api/skills').then(function(res) {
+    $http.get('/api/skills').then(function(res) {
         $scope.skillList = res.data;
     });
 
